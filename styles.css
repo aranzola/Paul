@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+h1 {
+  color: darkgreen;
+  font-size: 45px;
+  background-color: rgb(14, 176, 133);
+  font-family: "Bungee Spice", serif;
+  padding-left: 10px;
+  border: 2px solid rgb(0, 0, 0);
+}
+h2 {
+  color: rgb(0, 0, 0);
+  padding-left: 10px;
+}
+p {
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+}
+#introducció {
+  color: rgb(233, 164, 16);
+}
+.colorblau {
+  color: blue;
+}
+#cos {
+  color: rgb(6, 133, 52);
+}
+
+.capçalera {
+  grid-area: c;
+}
+
+.contingut {
+  grid-area: o;
+  padding: 10px;
+}
+
+.lateral {
+  grid-area: l;
+  padding: 10px;
+  padding-top: 70px;
+}
+
+.peu {
+  grid-area: p;
+}
+
+.principal {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-rows: 100px auto 40px;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    "c c"
+    "o l"
+    "p p";
+}
